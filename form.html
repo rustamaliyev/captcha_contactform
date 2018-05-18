@@ -1,0 +1,45 @@
+          <form id="contact" class="contactMe small roof-contact-form our-form" action="contactme/send-simple-form.php" method="POST" enctype="multipart/form-data">
+            <div class="row">
+              <div class="col-md-12 col-sm-12">
+                <div class="form-group">
+                  <input type="text" name="name" data-displayname="Name" class="form-control field" placeholder="Your Name" required>
+                  <div class="input-bottom-line"></div>
+                </div>
+              </div>
+             </div>
+              
+            <div class="row">
+              <div class="col-md-12 col-sm-12">
+                <div class="form-group">
+                  <input type="email" name="email" data-displayname="Email" class="form-control field" placeholder="Your E-mail" required>
+                  <div class="input-bottom-line"></div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 col-sm-12">
+                <div class="form-group">
+                  <input type="phone" name="phone" data-displayname="phone" class="form-control field" placeholder="Your Phone" required>
+                  <div class="input-bottom-line"></div>
+                </div>
+              </div>
+              
+            </div>
+            <div class="row">
+              <div class="col-sm-12 col-md-12">
+                <div class="form-group">
+                  <textarea name="message" data-displayname="Message" class="form-control field" placeholder="Message" required></textarea>
+                  <div class="input-bottom-line"></div>
+                </div>
+              </div>
+            </div>
+              <div class="re-captcha" data-sitekey="your-api-key"></div> 
+					
+					<!-- <div class="re-captcha invisible" data-sitekey=""></div>-->
+					<div class="msg"></div>  
+              
+            <button type="submit" class="red-button bgcolor" data-sending="Sending...">
+              <span>Submit</span>
+            </button>
+            <input type="hidden" value="submitform" name="action">
+          </form>
